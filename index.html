@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Checkout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Credit Card Checkout</h2>
+        <form>
+            <label for="cardNumber">Card Number</label>
+            <input type="text" id="cardNumber" name="cardNumber" maxlength="19" placeholder="1234 5678 9012 3456" required>
+
+            <div class="card-details">
+                <divz class="card-detail">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="text" id="expiryDate" name="expiryDate" pattern="\d{2}/\d{2}" placeholder="MM/YY" required>
+                </divz>
+
+                <div class="card-detail">
+                    <label for="securityCode">Security Code</label>
+                    <input type="text" id="securityCode" name="securityCode" maxlength="3" placeholder="123" required>
+                </div>
+            </div>
+
+            <label for="cardHolder">Cardholder Name</label>
+            <input type="text" id="cardHolder" name="cardHolder" placeholder="John Doe" required>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+</body>
+</html>
